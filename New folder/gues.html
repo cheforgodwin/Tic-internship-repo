@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gues.css">
+</head>
+<body>
+    <h2>gues a number from 1 to 10</h2>
+    <input id="mygues" type="number" max="10" min="1">
+    <button onclick="gues()">submit</button>
+    <P id="message"> the number is</P>
+    <script>
+        function gues(){
+            let user=document.getElementById("mygues").value;
+            let computer=Math.floor(Math.random()*10)+1;
+            let message=document.getElementById("message");
+            if ( user==computer){
+                message.innertext="yh u got it"; 
+            }
+            else{
+                message.innertext="oops fail"+ computer + ".try again";
+            }
+        }
+    </script>
+</body>
+</html>

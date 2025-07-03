@@ -1,0 +1,43 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="area.css">
+   </head>
+   <body>
+    
+   </body>
+   </html>
+   <h2>guesing game</h2>
+   <h5>pick a number in order to proceed with the game</h5>
+    <button style="background-color: green;" onclick="guess()">click here</button>
+ <script>
+        function guess(){
+            let guess;
+          
+             let computernumber=Math.floor(Math.random()*100)+1;
+             let attempts=5;
+             let success=false;
+             while(attempts>0){   
+             let user=parseInt(prompt("gues a number between 1 and 100. you have 5 attempts "));
+             if(user===computernumber)
+             {
+                alert("wooow success! you guesed the correct number:"+computernumber);
+                success = true ;
+                break;
+             }
+             else { 
+                attempts--;
+                if (attempts > 0){
+                    alert("Try again");
+                }
+             }
+            }
+            if(!success){
+                alert("game over! coreect number:="+computernumber);
+            }
+
+        }
+    </script>

@@ -1,0 +1,53 @@
+ body{
+    background-image: url(/images/pattern-background-desktop.svg) ;
+    font-size: 16px;
+    color: hsl(225, 100%, 98%) ;
+    font-weight:  500, 700, 900;
+    font-family: sans-serif;
+    
+ }
+.form{
+    height: 80vh;
+    width: 300px;
+    background-color:white;
+    justify-self: center;
+    margin: 12px;
+    border-radius: 12px;
+
+
+}
+.po{
+    height: 30%;
+    width: 100%;
+}
+h3,h2,h4,img, p{
+    justify-self: center;
+}
+.ici{
+    display: flex;
+    background-color: hsl(225, 100%, 94%);
+    justify-content: center;
+    gap: 12px;
+    margin: 12px;
+    border-radius: 12px;
+
+    
+}
+button{
+    display: flex;
+    justify-self: center;
+    background-color: blue;
+    width:270px;
+    height: 30px;
+    justify-content: center;
+    border-radius: 9px;
+        
+}
+img{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    
+}
+p{
+    color: hsl(224, 23%, 55%) ;
+}

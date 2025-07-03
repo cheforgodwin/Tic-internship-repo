@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin-top: 25px;
+    background-color:ivory;
+}
+h2,h4{
+    justify-self: center;
+    align-self: center;
+}
+button{
+    height: 75px;
+    width:200px ;
+    margin:  3%  40%  3% 40% ;
+    border-radius: 12px;
+    border: transparent;
+
+} 
+h4{
+    margin-top: 12px;
+}

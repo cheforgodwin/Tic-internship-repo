@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo">hello</p>
+    <p id="demo">sdxcfvgbhnj</p>
+    <img id="myimg" src="bb.jpg" alt="">
+    <script>
+        let element = document.getElementById("demo");
+        console.log(element.textContent);
+        document.querySelector("p").textContent = "how are u bro"
+        console.log(element.textContent);
+
+        element.textContent = "bonjour comment tu"
+        
+        let firstp = document.getElementById("demo");
+        console.log(firstp.textContent);
+
+        let img = document.getElementById("myimg");
+        img.setAttribute("src","pp.jpg")
+
+    </script>
+</body>
+
+</html>

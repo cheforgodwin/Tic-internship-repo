@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="area.css">
+</head>
+<body>
+    <h2>functions to calculate the area of  diferent shapes</h2>
+    <h4>please click the button to continue</h4>
+    <button id="area" style="background-color: skyblue;" onclick="area()">click here</button>
+  
+    <script>
+        function area(){
+            let shapes = prompt("enter a shape");
+            let area;
+            let square
+             let circle;
+              let triangle;
+            if(shapes == "square"){
+            
+                 let side= parseFloat(prompt("enter the side (of square:)"));
+                  area= side * side;
+                 console.log("area of",shapes,"is",area);
+                }
+                else if(shapes == "triangle")
+               
+                {
+                  let base= parseFloat(prompt("enter the base of the triangle (of triangle:)"));
+                let hieght = parseFloat(prompt("enter the hieght of the triangle (of triangle:)"));
+                 area = 0.5*base*hieght;
+                console.log("area of",shapes,"is",area);
+                }
+                else if(shapes == "circle")
+               
+                {  
+                  let raduis= parseFloat(prompt("enter the raduis (of circle:)"));
+                    area = 3.14*raduis*raduis;
+                console.log("area of",shapes,"is",area);
+                }
+                else{
+                    console.log("unknown shape");
+                }
+        }
+        
+    </script>
+   
+</body>
+</html>
