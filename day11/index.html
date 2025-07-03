@@ -11,40 +11,35 @@
     <h4>please click the button to continue</h4>
     <button id="area" style="background-color: skyblue;" onclick="area()">click here</button>
   
-    <script>
-        function area(){
-            let shapes = prompt("enter a shape");
-            let area;
-            let square
-             let circle;
-              let triangle;
-            if(shapes == "square"){
-            
-                 let side= parseFloat(prompt("enter the side (of square:)"));
-                  area= side * side;
-                 console.log("area of",shapes,"is",area);
-                }
-                else if(shapes == "triangle")
-               
-                {
-                  let base= parseFloat(prompt("enter the base of the triangle (of triangle:)"));
-                let hieght = parseFloat(prompt("enter the hieght of the triangle (of triangle:)"));
-                 area = 0.5*base*hieght;
-                prompt("area of",shapes,"is",area);
-                }
-                else if(shapes == "circle")
-               
-                {  
-                  let raduis= parseFloat(prompt("enter the raduis (of circle:)"));
-                    area = 3.14*raduis*raduis;
-                console.log("area of",shapes,"is",area);
-                }
-                else{
-                    console.log("unknown shape");
-                }
-        }
-        
-    </script>
+
+  <script>
+    function area() {
+      let shape = prompt("Enter a shape (square, triangle, or circle)").toLowerCase();
+      let area;
+
+      if (shape === "square") {
+        let side = parseFloat(prompt("Enter the side of the square:"));
+        area = side * side;
+        alert("Area of " + shape + " is " + area);
+      } 
+      else if (shape === "triangle") {
+        let base = parseFloat(prompt("Enter the base of the triangle:"));
+        let height = parseFloat(prompt("Enter the height of the triangle:"));
+        area = 0.5 * base * height;
+        alert("Area of " + shape + " is " + area);
+      } 
+      else if (shape === "circle") {
+        let radius = parseFloat(prompt("Enter the radius of the circle:"));
+        area = 3.14 * radius * radius;
+        alert("Area of " + shape + " is " + area);
+      } 
+      else {
+        alert("Unknown shape. Please enter square, triangle, or circle.");
+      }
+    }
+  </script>
+</body>
+</html>
    
 </body>
 </html>
