@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <button id="orderBtn">Order</button>
+
+<form id="orderForm" class="hidden">
+  <h2>Place Your Order</h2>
+  <label>
+    Name:
+    <input type="text" name="name" required />
+  </label>
+  <br />
+  <label>
+    Number:
+    <input type="tel" name="number" required />
+  </label>
+  <br />
+  <label>
+    Price:
+    <input type="number" name="price" step="0.01" required />
+  </label>
+  <br />
+  <label>
+    Quantity:
+    <input type="number" name="quantity" required />
+  </label>
+  <br />
+  <label>
+    Payment Details:
+    <input type="text" name="payment" required />
+  </label>
+  <br />
+  <button type="submit">Submit Order</button>
+</form>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const orderBtn = document.getElementById('orderBtn');
+    const orderForm = document.getElementById('orderForm');
+
+    orderBtn.addEventListener('click', () => {
+      orderForm.classList.toggle('hidden');
+    });
+  });
+</script>
+
+</body>
+</html>

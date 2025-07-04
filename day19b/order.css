@@ -1,0 +1,24 @@
+.hidden {
+  display: none;
+}
+
+#orderForm {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 400px;
+  background: #f9f9f9;
+}
+
+#orderForm label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#orderForm input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
