@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <!-- dom -->
+       <p id="message"> good morning how are u doing</p>
+       <button id="btn">click me</button>
+       <!-- monu -->
+        <button id="hamburger"> ☰ </button>
+        <div id="manu">
+            <ul>home</ul>
+            <ul>service</ul>
+            <ul>results</ul>
+        </div>
+        <div id="box" style=" transition: 0.3s;border-radius: 12px;background-color: red; width: 200px;height: 100px;"></div>
+       <br><br>
+       <h2>clicks:<span id="count">0</span></h2>
+        <button id="counter">click me</button>
+
+    
+     <script>
+        const paragraph=document.getElementById("message");
+        let button=document.getElementById("btn");
+        button.addEventListener("click",()=>{
+          if(paragraph.textContent="hope u are doin great");
+          else{
+                paragraph.textContent="good morning how are u doing"
+          };
+
+        });
+
+        const hamburger=document.getElementById("hamburger");
+        const manu=document.getElementById("manu");
+        hamburger.addEventListener("click",()=>{
+            if (manu.style.display === "block") {
+                manu.style.display = "none";
+            } else {
+                manu.style.display = "block";
+            }
+            manu.classList.toggle("active");
+         
+        });
+           const box = document.getElementById("box");
+            box.addEventListener("mouseover",()=>{
+                box.style.backgroundColor="green";})
+                box.addEventListener("mouseout",()=>{
+                box.style.backgroundColor="red";
+            });
+           
+             button = document.getElementById("counter");
+        const     counterdisplay = document.getElementById("count");
+ let count = 0;
+            button.addEventListener("click",()=>{
+                counter++;
+                counterdisplay.textContent = count++;
+                    });
+     </script>
+    </body>
+</html>
