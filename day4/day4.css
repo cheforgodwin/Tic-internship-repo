@@ -5,9 +5,13 @@
     font-weight:  500, 700, 900;
     font-family: sans-serif;
     
+    /* background-position:top; */
+    background-size:cover;
+    background-repeat:no-repeat;
+    
  }
 .form{
-    height: 80vh;
+    height: 95vh;
     width: 300px;
     background-color:white;
     justify-self: center;
@@ -41,7 +45,23 @@ button{
     height: 30px;
     justify-content: center;
     border-radius: 9px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
         
+}
+.button:hover{
+     display: flex;
+    justify-self: center;
+    background-color: blue;
+    width:270px;
+    height: 30px;
+    justify-content: center;
+    border-radius: 9px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    transition: 0.3s;
 }
 img{
     border-top-left-radius: 12px;
